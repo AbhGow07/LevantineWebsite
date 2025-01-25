@@ -11,7 +11,7 @@ import React from 'react';
         >
           <section style={{ position: 'relative', height: '500px', overflow: 'hidden' }}>
             <div style={{
-              backgroundImage: 'heroimage.jpg',
+              backgroundImage: 'url("src/Images/Logo.jpg")',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               height: '100%',
