@@ -1,4 +1,5 @@
 import React from 'react';
+import videobg from '../Images/videobg.mp4';
     import { motion } from 'framer-motion';
 
     function HomePage() {
@@ -10,17 +11,9 @@ import React from 'react';
           transition={{ duration: 0.5 }}
         >
           <section style={{ position: 'relative', height: '500px', overflow: 'hidden' }}>
-            <div style={{
-              backgroundImage: 'url("src/Images/Logo.jpg")',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              height: '100%',
-              width: '100%',
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              zIndex: 0
-            }} />
+            <div style={{ position: 'relative', height: '500px', overflow: 'hidden' }}>
+              <video src={videobg} autoPlay loop muted style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            </div>
             <div style={{
               position: 'absolute',
               top: '50%',
